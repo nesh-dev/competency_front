@@ -6,25 +6,25 @@ import { Routes, RouterModule } from '@angular/router';
 import { SignupComponent } from './register/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-const routes: Routes = [
-  {
-      path: '',
-      component: SignupComponent
-  }
-];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
 
   ],
+  
   imports: [
     BrowserModule,
     RegisterModule,
-    RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+   
+
   ],
   providers: [],
   bootstrap: [AppComponent]
