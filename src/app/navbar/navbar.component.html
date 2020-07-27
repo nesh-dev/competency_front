@@ -1,0 +1,22 @@
+<div class="nav-bar">
+    <div class="left-part">
+        <h4>{{ title }}</h4>
+    </div>
+    <div class="right-part">
+        <div class="right-part" id="nav-right">
+            <mat-form-field color="#ff0000">
+                <input matInput type="search" placeholder="Search">
+            </mat-form-field>
+            <button mat-mini-fab class="search-btn"><i class="material-icons" style="font-size:18px;">search</i></button>
+
+            <button><span class="material-icons">
+                notifications
+                </span></button> &nbsp;
+
+        </div>
+
+        <div id="logout">
+            <button mat-icon-button (click)="menuClick()"><i class="material-icons">logout</i></button>
+        </div>
+    </div>
+</div>
