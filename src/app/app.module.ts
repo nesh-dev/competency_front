@@ -16,7 +16,6 @@ import { ProfileService } from './services/profile/profile.service';
 import { SettingsService } from './services/settings.services';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,9 +40,11 @@ import { SettingsService } from './services/settings.services';
     FileUploadModule,
     AppRoutingModule,
     FormsModule,
+    DepartmentModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
+  
   providers: [ProfileService, SettingsService],
   bootstrap: [AppComponent]
 })
