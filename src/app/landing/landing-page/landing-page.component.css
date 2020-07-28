@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(99, 124, 51);
+    background-size: 100%
+}
+
+.full-screen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(99, 124, 51);
+    /* background: url(https://i.imgur.com/wCG2csZ.png); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    /* works with row or column */
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+  h1{
+    font-family: Montserrat;
+    text-emphasis: inherit;
+    color: white;
+    font-size: 39px;
+    margin-top: 14px;
+}
+
+button{
+    background-color: rgb(238, 244, 253);
+    color: black;
+    width: 120px;
+    font-family: Montserrat;
+    /* margin-left: 120px; */
+    font-size: large;
+}
+
+img{
+    width: 540px;
+}
