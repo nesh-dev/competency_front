@@ -9,6 +9,10 @@ export class AddManagerFormComponent implements OnInit {
 
   constructor() { }
 
+  onSubmit(data){
+    console.warn(data)
+  }
+  
   ngOnInit(): void {
   }
 

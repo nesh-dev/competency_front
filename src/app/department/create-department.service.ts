@@ -16,7 +16,7 @@ export class CreateDepartmentService {
   {
     departmentname: 'Procurement',
     departmentcode: '5467',
-    assignmanager: 'Collin Owino Kairu'
+    assignmanager: 'Collin Owino'
   },
   {
     departmentname: 'Curriculum',

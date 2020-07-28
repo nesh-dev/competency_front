@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {DepartmentModule} from './department/department.module';
+import {ManagerModule} from './manager/manager.module';
 
 
 
@@ -23,6 +24,7 @@ import {DepartmentModule} from './department/department.module';
     AppRoutingModule,
     FormsModule,
     DepartmentModule,
+    ManagerModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     RouterModule,

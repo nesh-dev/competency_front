@@ -1,1 +1,43 @@
-<p>add-manager-form works!</p>
+<div class="container">
+<mat-card>
+    <mat-card-content>
+        <form #createdepartmentForm="ngForm" (ngSubmit)="onSubmit(createdepartmentForm.value)">
+            <div>
+                <img src="./assets/img/moringa-logo.png">
+            </div>
+            <br><br>
+                        
+            <h1>Add Manager</h1>
+            
+            <br>
+
+            <mat-form-field>
+                <label for="managerName">Manager Name:</label>
+                <br><br>
+                <input required matInput placeholder="Manager Name" #managerName="ngModel"  id="managerName" type="text"  class="form-control" ngModel>
+                <!-- <span *ngIf="managerName.invalid" class="error">Department Name is Required</span> -->
+                <span *ngIf="managerName.valid" class="error">Manager Name is Required</span>
+            </mat-form-field>
+            <br>
+
+            <mat-form-field>
+                <label for="managerUsername">Username:</label>
+                <br><br>
+                <input matInput #managerUsername="ngModel" id="managerUsername" type="text"  class="form-control" ngModel>
+            </mat-form-field>
+            <br>
+
+            <mat-form-field>
+                <label for="managerEmail">Email:</label>
+                <br><br>
+                <input matInput #manageEmail="ngModel" id="managerEmail" type="email"  class="form-control" ngModel>
+            </mat-form-field>
+
+            <br>
+
+            <button mat-button  type="submit" class="btn btn-primary">Add</button>
+            <br><br>
+        </form>
+    </mat-card-content>
+</mat-card>
+</div>
