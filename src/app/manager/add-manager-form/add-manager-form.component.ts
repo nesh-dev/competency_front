@@ -11,6 +11,7 @@ export class AddManagerFormComponent implements OnInit {
 
   onSubmit(data){
 
+    console.warn(data)
   }
   
   ngOnInit(): void {
