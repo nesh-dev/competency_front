@@ -6,11 +6,8 @@
                 <img src="./assets/img/moringa-logo.png">
             </div>
             <br><br>
-                       
             <h1>Create Department</h1>
-            
             <br>
-
             <mat-form-field>
                 <label for="departmentName">Department Name:</label>
                 <br><br>
@@ -19,14 +16,12 @@
                 <span *ngIf="departmentName.valid" class="error">Department Name is Required</span>
             </mat-form-field>
             <br>
-
             <mat-form-field>
                 <label for="departmentCode">Department Code:</label>
                 <br><br>
                 <input matInput #departmentCode="ngModel" id="departmentCode" type="text"  class="form-control" ngModel>
             </mat-form-field>
             <br>
-
             <mat-form-field>
                 <label id="assignManager" for="assignManager">Assign Manager</label>
                 <br><br>
@@ -36,8 +31,8 @@
                 </select>
             </mat-form-field>
             <br>
-
             <button mat-button  type="submit" class="btn btn-primary">Create</button>
+            <br><br>
         </form>
     </mat-card-content>
 </mat-card>

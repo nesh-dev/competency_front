@@ -4,8 +4,9 @@ import {Routes, RouterModule} from '@angular/router';
 const appRoutes: Routes = [
     {path: '', pathMatch: 'full', redirectTo: '/login'},
     { path: 'dashboard', pathMatch: 'full', redirectTo: '/dashboard' }, 
-
+    {path: '', pathMatch: 'full', redirectTo: '/create-department'}
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]

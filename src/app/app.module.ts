@@ -7,12 +7,13 @@ import { SignupComponent } from './register/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {DepartmentModule} from './department/department.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
   ],
   
   imports: [
@@ -21,10 +22,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    DepartmentModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-   
-
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

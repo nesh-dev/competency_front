@@ -4,67 +4,53 @@
     display: flex;
     justify-content: center;
     width: 350px;
-    height: 650px;
+    height: 680px;
 }
-
 input{
     background-color: white;
 }
-
 button{
     background-color: rgba(99, 124, 51, 100);
     color: white;
     font-family: Montserrat;
-    margin-left: 138px;
-    font-size: 20px;
+    margin-left: 120px;
+    font-size: 35px;
 }
-
 h1{
     font-family: Montserrat;
     text-emphasis: inherit;
     margin-left: 66px;
-    
 }
-
 .container{
     display: flex;
     justify-content: center;
 }
-
 #assignManager{
     font-family: Montserrat;
 }
-
 mat-form-field{
     font-family: Montserrat;
     margin-left: 99px;
 }
-
 input ::placeholder{
     font-family: Montserrat;
     color: black;
 }
-
 input{
     height: 30px;
 }
-
 img{
     width: 380px;
 }
-
 select{
     margin-left: 28px;
 }
-
 input.ng-invalid{
     border-left: 5px solid red;
 }
-
 input.ng-invalid{
     border-left: 5px solid green;
 }
-
 .error{
     color: red;
     font-size:10px;
