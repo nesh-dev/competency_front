@@ -44,7 +44,7 @@ import { SettingsService } from './services/settings.services';
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
-  
+
   providers: [ProfileService, SettingsService],
   bootstrap: [AppComponent]
 })
