@@ -8,9 +8,10 @@ import{ Router } from '@angular/router'
 export class ProfileService {
 
   private user: UserProfile = {
-    name: "Rose Kairu",
+    firstname: " ",
+    lastname: " ",
     email: "rosekairu@gmail.com",
-    bio: "I am currently...",
+    bio: "",
     contact: 0,
   };
 

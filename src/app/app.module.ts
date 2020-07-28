@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FileUploadModule } from 'ng2-file-upload';
 
 import { RegisterModule } from './register/register.module';
 import { RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {DepartmentModule} from './department/department.module';
 import {ManagerModule} from './manager/manager.module';
 import {LandingModule} from './landing/landing.module';
@@ -41,7 +43,9 @@ import { UpdateProfileComponent } from './dashboard/update-profile/update-profil
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule, 
+    FileUploadModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]

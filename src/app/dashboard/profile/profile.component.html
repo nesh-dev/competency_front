@@ -4,10 +4,11 @@
     <br>
     <br>
     <div class="profile-text">
-        <h1>{{ user.name }}</h1> <br>
-        <p class="email">{{ user.email }}</p> <br>
-        <p class="contact">{{ user.contact }}</p> <br>
+        <br>
+        <h3> <span> Name : </span> {{ user.firstname }} {{ user.lastname }}</h3> <br>
+        <p class="email"> <span> Email : </span>&nbsp;{{ user.email }}</p> <br>
+        <p class="contact"><span> Phone Number : </span>&nbsp;{{ user.contact }}</p> <br>
         <p>{{ user.bio }}</p> <br>
-        <button routerLink="/edit">Update</button>
-    </div>
+    </div> <br>
+    <button routerLink="/edit">Edit</button>
 </section>

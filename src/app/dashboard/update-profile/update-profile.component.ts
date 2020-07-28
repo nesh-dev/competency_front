@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ProfileService } from '../../services/profile/profile.service';
 import { Router } from "@angular/router";
 import { UserProfile } from "../../interfaces/user-profile";
@@ -10,6 +10,9 @@ import { UserProfile } from "../../interfaces/user-profile";
 })
 export class UpdateProfileComponent implements OnInit {
   user: UserProfile;
+
+  public editEnabled = true;
+  public picurl: string;
 
   constructor(private profileService: ProfileService, private router: Router) { }
 

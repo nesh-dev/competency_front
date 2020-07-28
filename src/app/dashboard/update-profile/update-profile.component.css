@@ -1,50 +1,64 @@
-form {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 1);
-    padding: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 28px;
-}
-
-p {
-    font-size: 18px;
-    font-weight: 800;
-}
-
-label {
-    color: #637c33;
-    font-size: 20px;
-    font-weight: 900;
-    margin-bottom: 14px;
-}
-
-input {
-    border-radius: 14px;
-    padding: 14px;
-    margin-bottom: 14px;
-    border: 1px solid #404242;
-}
-
-textarea {
-    border-radius: 14px;
-    margin-bottom: 14px;
-    resize: none;
-}
-
-button {
-    background-color: #505355;
-    color: white;
-    padding: 14px;
-    border-radius: 14px;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-button:hover {
-    background-color: #637c33;
-    transition: 0.1s;
-}
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: 15px;
+        margin-left: 130px;
+    }
+    
+    form {
+        background-color: rgb(243, 245, 247);
+        flex-direction: column;
+        width: 350px;
+        height: 520px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 1);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 28px;
+    }
+    
+    p {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    input {
+        margin-left: 14px;
+        padding: 10px;
+        margin-bottom: 14px;
+        border: .1px solid #deecec;
+        background-color: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+    
+    textarea {
+        margin-left: 14px;
+        resize: none;
+        border: .1px solid #deecec;
+    }
+    
+    #bio {
+        margin-top: 28px;
+    }
+    
+    button {
+        margin-left: 100px;
+        border-radius: 15px;
+        width: 150px;
+        background-color: #637c33;
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        flex-direction: center;
+    }
+    
+    button:hover {
+        background-color: #637c33;
+        transition: 0.1s;
+    }
