@@ -2,7 +2,7 @@
 <mat-card>
     <mat-card-content>
         <form #createdepartmentForm="ngForm" (ngSubmit)="onSubmit(createdepartmentForm.value)">
-            <div>
+            <div class=imagediv>
                 <img src="./assets/img/moringa-logo.png">
             </div>
             <br><br>
@@ -11,32 +11,20 @@
             
             <br>
 
-            <mat-form-field>
-                <label for="managerName">Manager Name:</label>
-                <br><br>
-                <input required matInput placeholder="Manager Name" #managerName="ngModel"  id="managerName" type="text"  class="form-control" ngModel>
+            <div class="managerinputs">
+                <input required placeholder="Manager Name" #managerName="ngModel"  id="managerName" type="text"  class="form-control" ngModel>
                 <!-- <span *ngIf="managerName.invalid" class="error">Department Name is Required</span> -->
-                <span *ngIf="managerName.valid" class="error">Manager Name is Required</span>
-            </mat-form-field>
-            <br>
-
-            <mat-form-field>
-                <label for="managerUsername">Username:</label>
+                <span *ngIf="managerName.valid" class="error">Manager Name is Required</span>        
                 <br><br>
-                <input matInput #managerUsername="ngModel" id="managerUsername" type="text"  class="form-control" ngModel>
-            </mat-form-field>
-            <br>
-
-            <mat-form-field>
-                <label for="managerEmail">Email:</label>
+                <input  placeholder="Username" #managerUsername="ngModel" id="managerUsername" type="text"  class="form-control" ngModel>
                 <br><br>
-                <input matInput #manageEmail="ngModel" id="managerEmail" type="email"  class="form-control" ngModel>
-            </mat-form-field>
+                <input  placeholder="Email" #manageEmail="ngModel" id="managerEmail" type="email"  class="form-control" ngModel>
+            </div>
 
-            <br>
-
+            
+            <br><br><br><br><br><br><br><br><br>
             <button mat-button  type="submit" class="btn btn-primary">Add</button>
-            <br><br>
+            <br><br><br>
         </form>
     </mat-card-content>
 </mat-card>

@@ -38,10 +38,12 @@ body{
 button{
     background-color: rgb(238, 244, 253);
     color: black;
-    width: 120px;
+    width: 165px;
+    height: 45px;
     font-family: Montserrat;
     /* margin-left: 120px; */
-    font-size: large;
+    font-size: x-large;
+    border-radius: 25px;
 }
 
 img{

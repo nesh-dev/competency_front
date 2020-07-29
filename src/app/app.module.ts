@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {DepartmentModule} from './department/department.module';
 import {ManagerModule} from './manager/manager.module';
+import {LandingModule} from './landing/landing.module';
+import {ReporteeModule} from './reportee/reportee.module'
 
 
 
@@ -24,6 +26,8 @@ import {ManagerModule} from './manager/manager.module';
     FormsModule,
     DepartmentModule,
     ManagerModule,
+    LandingModule,
+    ReporteeModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     RouterModule,

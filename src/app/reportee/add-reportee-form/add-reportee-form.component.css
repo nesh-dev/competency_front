@@ -21,17 +21,16 @@ button{
 h1{
     font-family: Montserrat;
     text-emphasis: inherit;
-    margin-left: 66px;
+    margin-left: 100px;
 }
 .container{
     display: flex;
     justify-content: center;
 }
 #assignManager{
-    /* font-family: ; */
-    color: rgb(119, 116, 116);
+    font-family: Montserrat;
 }
-.departmentinputs{
+.reporteeinputs{
     font-family: Montserrat;
     margin-left: 38px;
 }
@@ -40,15 +39,16 @@ input ::placeholder{
     color: black;
 }
 input{
-    height: 30px;
+    height: 40px;
+    width: 300px;
+    border: none;
+    margin-bottom: -10px;
 }
 img{
     width: 380px;
 }
 select{
-    border: none;
-    width: 304px;
-    height: 40px;
+    margin-left: 28px;
 }
 input.ng-invalid{
     border-left: 5px solid red;
@@ -69,14 +69,3 @@ option{
     margin-top: -15px;
 }
 
-.departmentinputs{
-    font-family: Montserrat;
-    margin-left: 38px;
-}
-
-input{
-    height: 40px;
-    width: 300px;
-    border: none;
-    margin-bottom: -10px;
-}
