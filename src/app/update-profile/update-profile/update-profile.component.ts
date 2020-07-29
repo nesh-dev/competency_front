@@ -1,7 +1,7 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { ProfileService } from '../../services/profile/profile.service';
+import { Component, OnInit } from '@angular/core';
+import { ProfileService } from '../profile.service';
 import { Router } from "@angular/router";
-import { UserProfile } from "../../interfaces/user-profile";
+import { UserProfile } from "../user-profile";
 
 @Component({
   selector: 'app-update-profile',

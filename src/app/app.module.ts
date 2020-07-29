@@ -10,15 +10,12 @@ import { FileUploadModule } from 'ng2-file-upload';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProfileService } from './services/profile/profile.service';
-import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
+import { ProfileService } from './update-profile/profile.service';
+import { UpdateProfileModule } from './update-profile/update-profile.module';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UpdateProfileComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,7 +28,8 @@ import { UpdateProfileComponent } from './dashboard/update-profile/update-profil
     MatInputModule,
     BrowserAnimationsModule,
     HttpClientModule, 
-    FileUploadModule
+    FileUploadModule,
+    UpdateProfileModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]

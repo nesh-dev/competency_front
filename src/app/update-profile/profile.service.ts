@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { UserProfile } from "../../interfaces/user-profile";
+import { UserProfile } from "../update-profile/user-profile";
 import{ Router } from '@angular/router'
 
 @Injectable({
@@ -7,11 +7,11 @@ import{ Router } from '@angular/router'
 })
 export class ProfileService {
 
-  private user: UserProfile = {
+  private user: UserProfile = { 
     firstname: " ",
     lastname: " ",
-    email: "rosekairu@gmail.com",
-    bio: "",
+    email: " ",
+    bio: " ",
     contact: 0,
   };
 
