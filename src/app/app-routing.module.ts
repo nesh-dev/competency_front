@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ProfileComponent} from './dashboard/profile/profile.component';
-import {UpdateProfileComponent} from './dashboard/update-profile/update-profile.component';
+import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 const routes: Routes = [
-  { path: "profile", component: ProfileComponent },
+  { path: "sidebar", component: SidebarComponent },
   { path: "edit", component: UpdateProfileComponent },
-  { path: "**", redirectTo: "profile" }
+  { path: "**", redirectTo: "sidebar" }
 ];
 
 @NgModule({
