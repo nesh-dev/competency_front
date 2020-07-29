@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     {path: '', pathMatch: 'full', redirectTo: '/landing-page'},
     { path: 'dashboard', pathMatch: 'full', redirectTo: '/dashboard' },
     {path: '', pathMatch: 'full', redirectTo: '/create-department'}, 
-    { path: "edit", component: UpdateProfileComponent },
+    { path: "update-profile", component: UpdateProfileComponent },
     { path: "sidebar", component: SidebarComponent },
 
 ]

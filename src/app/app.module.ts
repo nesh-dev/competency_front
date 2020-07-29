@@ -16,14 +16,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileService } from './services/profile/profile.service';
 import { SettingsService } from './services/settings.services';
-
-
+import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
+import { SidebarComponent } from "./sidebar/sidebar.component";
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    UpdateProfileComponent,
+    SidebarComponent,
   ],
   
   imports: [
@@ -44,7 +46,6 @@ import { SettingsService } from './services/settings.services';
     BrowserAnimationsModule,
     HttpClientModule, 
     FileUploadModule,
-
   ],
   providers: [ProfileService, SettingsService],
   bootstrap: [AppComponent]
