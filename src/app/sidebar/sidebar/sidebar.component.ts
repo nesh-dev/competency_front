@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SettingsService } from '../services/settings.services';
+import { SidebarService } from '../sidebar.services';
 import { ROUTES } from './sidebar-routes.config';
 import { Router } from '@angular/router';
 
@@ -16,7 +16,7 @@ export class SidebarComponent implements OnInit {
   public dividerBgColor: string;
   currentUser: any;
 
-  constructor(public settingsService: SettingsService, private router: Router) {
+  constructor(public sidebarService: SidebarService, private router: Router) {
     this.menuItems = ROUTES;
     this.activeFontColor = 'rgba(0,0,0,.6)';
     this.normalFontColor = 'rgba(255,255,255,.8)';
@@ -25,8 +25,8 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.color = this.settingsService.getSidebarFilter();
-    this.settingsService.sidebarFilterUpdate.subscribe((filter: string) => {
+    this.color = this.sidebarService.getSidebarFilter();
+    this.sidebarService.sidebarFilterUpdate.subscribe((filter: string) => {
       this.color = filter;
       if (filter === '#fff') {
         this.activeFontColor = 'rgba(0,0,0,.6)';
@@ -35,7 +35,7 @@ export class SidebarComponent implements OnInit {
         this.activeFontColor = 'rgba(255,255,255,.8)';
       }
     });
-    this.settingsService.sidebarColorUpdate.subscribe((color: string) => {
+    this.sidebarService.sidebarColorUpdate.subscribe((color: string) => {
       if (color === '#fff') {
         this.normalFontColor = 'rgba(0,0,0,.6)';
         this.dividerBgColor = 'rgba(0,0,0,.1)';

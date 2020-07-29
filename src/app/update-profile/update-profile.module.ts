@@ -1,29 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatInputModule } from  '@angular/material/input'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatRadioModule } from  '@angular/material/radio'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProfileService } from './update-profile/profile.service';
-import { SidebarService } from './sidebar/sidebar.services';
-import { UpdateProfileModule } from './update-profile/update-profile.module';
-import { SidebarModule } from "./sidebar/sidebar.module";
+import { UpdateProfileRoutingModule } from './update.profile.routing.module'
+import { AppRoutingModule } from '../app-routing.module';
+import { AppComponent } from '../app.component';
+import { ProfileService } from '../update-profile/profile.service';
+import { UpdateProfileComponent } from '../update-profile/update-profile/update-profile.component';
 
 
 
 @NgModule({
-  declarations: [
-    AppComponent],
+  declarations: [UpdateProfileComponent],
   imports: [
-    BrowserModule,
+    UpdateProfileRoutingModule,
+CommonModule,
+BrowserModule,
+
     AppRoutingModule,
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     MatStepperModule,
@@ -33,11 +37,9 @@ import { SidebarModule } from "./sidebar/sidebar.module";
     MatInputModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    UpdateProfileModule,
-    SidebarModule,
     MatSidenavModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class UpdateProfileModule { }

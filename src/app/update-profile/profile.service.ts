@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { UserProfile } from "../../interfaces/user-profile";
+import { UserProfile } from "../update-profile/user-profile";
 import{ Router } from '@angular/router'
 
 @Injectable({

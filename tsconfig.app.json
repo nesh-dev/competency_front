@@ -8,7 +8,7 @@
   "files": [
     "src/main.ts",
     "src/polyfills.ts",
-    "src/app/sidebar/sidebar.component.ts"
+    "src/app/sidebar/sidebar/sidebar.component.ts"
   ],
   "include": [
     "src/**/*.d.ts"

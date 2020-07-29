@@ -4,7 +4,7 @@ import{ Router } from '@angular/router'
 @Injectable({
   providedIn: 'root'
 })
-export class SettingsService {
+export class SidebarService {
   public sidebarImageIndex = 0;
   public sidebarImageIndexUpdate: EventEmitter<number> = new EventEmitter();
   public sidebarFilter = '#fff';
