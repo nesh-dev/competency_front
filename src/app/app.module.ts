@@ -6,26 +6,24 @@ import { FileUploadModule } from 'ng2-file-upload';
 
 import { RegisterModule } from './register/register.module';
 import { RouterModule} from '@angular/router';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';
 import {DepartmentModule} from './department/department.module';
 import {ManagerModule} from './manager/manager.module';
 import {LandingModule} from './landing/landing.module';
 import {ReporteeModule} from './reportee/reportee.module'
-import { NavbarComponent } from './navbar/navbar.component';
-import { ProfileComponent } from './dashboard/profile/profile.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileService } from './services/profile/profile.service';
-import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
+import { SettingsService } from './services/settings.services';
+
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    ProfileComponent,
-    UpdateProfileComponent,
   ],
   
   imports: [
@@ -45,9 +43,10 @@ import { UpdateProfileComponent } from './dashboard/update-profile/update-profil
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule, 
-    FileUploadModule
+    FileUploadModule,
+
   ],
-  providers: [ProfileService],
+  providers: [ProfileService, SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,11 +7,11 @@ import{ Router } from '@angular/router'
 })
 export class ProfileService {
 
-  private user: UserProfile = {
+  private user: UserProfile = { 
     firstname: " ",
     lastname: " ",
-    email: "rosekairu@gmail.com",
-    bio: "",
+    email: " ",
+    bio: " ",
     contact: 0,
   };
 
