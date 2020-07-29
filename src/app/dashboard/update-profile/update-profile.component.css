@@ -10,12 +10,19 @@
         background-color: rgb(243, 245, 247);
         flex-direction: column;
         width: 350px;
-        height: 520px;
+        height: 620px;
         border-radius: 5px;
-        box-shadow: 0px 0px 10px 0px rgba(204, 204, 204, 1);
         margin-left: auto;
         margin-right: auto;
         margin-top: 28px;
+    }
+    
+    h2 {
+        font-family: Montserrat;
+        margin-left: 50px;
+        text-emphasis: initial;
+        font-weight: 500;
+        font-size: 30px;
     }
     
     p {
@@ -28,7 +35,6 @@
         padding: 10px;
         margin-bottom: 14px;
         border: .1px solid #deecec;
-        background-color: white;
     }
     
     a {
@@ -42,23 +48,19 @@
         border: .1px solid #deecec;
     }
     
-    #bio {
-        margin-top: 28px;
-    }
-    
     button {
         margin-left: 100px;
-        border-radius: 15px;
+        border-radius: 10px;
         width: 150px;
         background-color: #637c33;
         color: white;
-        padding: 10px;
-        font-weight: 700;
-        font-size: 18px;
+        padding: 5px;
+        font-size: xx-large;
+        border: none;
         flex-direction: center;
+        font-family: Montserrat;
     }
     
     button:hover {
         background-color: #637c33;
-        transition: 0.1s;
     }
