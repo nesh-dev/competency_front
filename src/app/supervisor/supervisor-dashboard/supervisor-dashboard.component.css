@@ -1,21 +1,22 @@
-mat-sidenav-container{
-    height:100%;
+mat-sidenav-container {
+    height: 100%;
     background-color: white;
 }
 
 mat-sidenav mat-sidenav-content {
-    padding:16px;
-    
+    padding: 16px;
 }
 
-mat-sidenav{
-     background-color: white;
-     width: 260px; 
+mat-sidenav {
+    background-color: white;
+    width: 260px;
 }
-a{
+
+a {
     float: right;
 }
-.mat-card{
+
+.mat-card {
     background-color: rgb(238, 244, 253);
     color: black;
     display: flex;
@@ -25,7 +26,7 @@ a{
     margin-left: 200px;
 }
 
-.competencycard{
+.competencycard {
     background-color: rgb(238, 244, 253);
     color: black;
     display: flex;
@@ -34,7 +35,8 @@ a{
     height: 400px;
     margin-left: 200px;
 }
-.recommendationcard{
+
+.recommendationcard {
     background-color: rgb(238, 244, 253);
     color: black;
     display: flex;
@@ -44,7 +46,7 @@ a{
     margin-left: 240px;
 }
 
-#minicard{
+#minicard {
     background-color: rgb(238, 244, 253);
     box-shadow: none;
     color: black;
@@ -54,43 +56,47 @@ a{
     height: 200px;
     /* margin-left: 200px; */
 }
-h1{
+
+h1 {
     font-family: Montserrat;
     text-emphasis: inherit;
     margin-left: 66px;
     background-color: white;
 }
 
-#recommendationtitle{
+#recommendationtitle {
     margin-left: 260px;
-    width:405px;
+    width: 405px;
     text-align: center;
 }
-#organisationaltitle{
-    width:405px;
+
+#organisationaltitle {
+    width: 405px;
     text-align: center;
     margin-left: 55px;
 }
 
-#competencytitle{
-    width:405px;
+#competencytitle {
+    width: 405px;
     text-align: center;
     margin-left: 55px;
 }
-.competencyframework{
+
+.competencyframework {
     font-family: Montserrat;
-    margin-left: 10px;   
-}
-.competencytitlesize{
-    font-family: Montserrat;
-    margin-left: 10px; 
-    font-size: medium;
-    font-weight: 500;   
+    margin-left: 10px;
 }
 
-#more{
+.competencytitlesize {
+    font-family: Montserrat;
+    margin-left: 10px;
     font-size: medium;
-    font-weight: 500;  
+    font-weight: 500;
+}
+
+#more {
+    font-size: medium;
+    font-weight: 500;
 }
 
 .column {
@@ -99,35 +105,36 @@ h1{
     /* padding: 0 100px; */
 }
 
-#competencycolumn{
+#competencycolumn {
     padding: 0 100px;
     margin-right: 0px;
 }
 
-#organisationcolumn{
+#organisationcolumn {
     padding: 0 100px;
 }
 
-#recommendationrow{
+#recommendationrow {
     display: inline;
-    /* margin-left: 300px; */
-    width: 30%;   
 }
+
 
 /* #recommendationrow p{
     font-size: medium;
     font-weight: 500;  
 } */
 
-#topcardsrow{
-    margin-left:-250px;
-    
+#topcardsrow {
+    margin-left: -250px;
 }
-.bottomcardsrow{
-    margin-left:-190px;
-    
+
+.bottomcardsrow {
+    margin-left: -190px;
 }
-.row {margin: 0 -5px;}
+
+.row {
+    margin: 0 -5px;
+}
 
 .row:after {
     content: "";
@@ -137,80 +144,93 @@ h1{
 
 @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
 }
-.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{
-    color:#000!important;
-    background-color:#f1f1f1e5!important;
-    
+
+.w3-light-grey,
+.w3-hover-light-grey:hover,
+.w3-light-gray,
+.w3-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1e5!important;
 }
 
-.w3-light-grey-new{
-    background-color:#e6e4e4e5!important;
-}
-.w3-green,.w3-hover-green:hover{
-    background-color:#4CAF50!important;
-}
-.w3-red,.w3-hover-red:hover{
-    color:#fff!important;
-    background-color:#f44336!important;
-}
-.w3-blue,.w3-hover-blue:hover{
-    color:#fff!important;
-    background-color:#2196F3!important;
-}
-.w3-yellow,.w3-hover-yellow:hover{
-    color:#000!important;
-    background-color:#ffeb3b!important
+.w3-light-grey-new {
+    background-color: #e6e4e4e5!important;
 }
 
-.w3-center .w3-bar{
-    display:inline-block;
-    width:auto;
-    text-align:center;
+.w3-green,
+.w3-hover-green:hover {
+    background-color: #4CAF50!important;
 }
 
-.w3-container:after,.w3-container:before{
-    content:"";
-    display:table;
-    clear:both;
-    padding:0.01em 16px;
+.w3-red,
+.w3-hover-red:hover {
+    color: #fff!important;
+    background-color: #f44336!important;
 }
 
-#overview{
+.w3-blue,
+.w3-hover-blue:hover {
+    color: #fff!important;
+    background-color: #2196F3!important;
+}
+
+.w3-yellow,
+.w3-hover-yellow:hover {
+    color: #000!important;
+    background-color: #ffeb3b!important
+}
+
+.w3-center .w3-bar {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+.w3-container:after,
+.w3-container:before {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 0.01em 16px;
+}
+
+#overview {
     margin-left: 100px;
 }
 
-#departments{
+#departments {
     padding-left: 150px;
 }
 
-#pending{
+#pending {
     padding-left: 150px;
 }
 
-#procurementprogress{
+#procurementprogress {
     padding-left: 50px;
 }
 
-.assess{
+.assess {
     margin-left: -40px;
     text-align: center;
-    
 }
-.pendingtitle{
+
+.pendingtitle {
     text-align: center;
     line-height: 20pt;
 }
-#number{
+
+#number {
     font-size: xx-large;
     font-weight: bolder;
-    color:rgba(99, 124, 51, 100);
+    color: rgba(99, 124, 51, 100);
 }
 
-#title{
+#title {
     font-size: x-large;
 }
