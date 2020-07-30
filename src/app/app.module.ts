@@ -11,14 +11,21 @@ import {LandingModule} from './landing/landing.module';
 import {ReporteeModule} from './reportee/reportee.module'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {SupervisorModule} from './supervisor/supervisor.module';
+import {ManagerDashboardModule} from './manager-dash/manager-dashboard.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileService } from './services/profile/profile.service';
 import { SettingsService } from './services/settings.services';
+import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    UpdateProfileComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -29,6 +36,8 @@ import { SettingsService } from './services/settings.services';
     ManagerModule,
     LandingModule,
     ReporteeModule,
+    SupervisorModule,
+    ManagerDashboardModule,
     ReactiveFormsModule,
     RouterModule,
     AppRoutingModule,
