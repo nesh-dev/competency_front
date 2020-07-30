@@ -20,11 +20,12 @@ export class AuthService {
     loginUrl = `${environment.BASE_URL}login/`
     
     private httpOptions;
-    private currentUserSubject: BehaviorSubject<UserInfo>;
-    public currentUser: Observable<UserInfo>;
 
     public get currentUserValue() {
-        return this.currentUserSubject.asObservable();
+      const userData  = JSON.parse(localStorage.getItem('currentUser'));
+      const { token } = userData;
+      const {id } = this.getDecodedAccessToken(token)
+      return id
     }
 
 
