@@ -11,10 +11,9 @@
             <h1>Login</h1>
         <br>
         <br><br>
-          <form class="login-form">
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-
+            <form [formGroup]="form" (ngSubmit)="login()" class="login-form">
+            <input type="text" placeholder="username" [formControl]="form.controls.username"/>
+            <input type="password" placeholder="Password" [formControl]="form.controls.password"/>
             <br>
             <br>
             <br>

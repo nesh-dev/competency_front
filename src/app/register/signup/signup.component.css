@@ -1,6 +1,22 @@
+
+.loading-spinner{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo{
   width:380px ;
 }
+
+
+/* ::ng-deep.mat-spinner {
+  color: rgba(99,124,51,100);
+} */
+
+::ng-deep.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: rgba(99,124,51,100);
+  }
 
 .main-div{
     height: 100vh;
