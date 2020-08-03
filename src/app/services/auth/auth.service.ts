@@ -76,7 +76,7 @@ export class AuthService {
           return 'reportee'
         }else if(is_manager){
           return 'manager'
-        }else {
+        }else if(is_supervisor){
           return 'supervisor'
         }
        

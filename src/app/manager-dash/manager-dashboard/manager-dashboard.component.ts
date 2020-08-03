@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerDashboardComponent implements OnInit {
 
+  opened = true;
+
   constructor() { }
 
   ngOnInit(): void {

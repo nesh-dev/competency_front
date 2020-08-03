@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AddReporteeFormComponent } from './add-reportee-form/add-reportee-form.component';
+import { ReporteeDashboardComponent } from './reportee-dashboard/reportee-dashboard.component';
 import { AuthGuard } from './../services/auth/auth.guard';
 
 const reporteeRoutes: Routes = [
     {
-        path: 'add-reportee',
-        component: AddReporteeFormComponent,
+        path: 'reportee-dash',
+        component: ReporteeDashboardComponent,
         canActivate: [AuthGuard]
     }
 ];
