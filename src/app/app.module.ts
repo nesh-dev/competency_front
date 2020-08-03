@@ -16,6 +16,7 @@ import {ManagerDashboardModule} from './manager-dash/manager-dashboard.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileService } from './services/profile/profile.service';
 import { SettingsService } from './services/settings.services';
+import { ServicesModule } from './services/service.module';
 import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
 
 
@@ -28,9 +29,8 @@ import { UpdateProfileComponent } from './dashboard/update-profile/update-profil
     
   ],
   imports: [
-    BrowserModule,
+    RouterModule,
     RegisterModule,
-    AppRoutingModule,
     FormsModule,
     DepartmentModule,
     ManagerModule,
@@ -39,19 +39,14 @@ import { UpdateProfileComponent } from './dashboard/update-profile/update-profil
     SupervisorModule,
     ManagerDashboardModule,
     ReactiveFormsModule,
-    RouterModule,
-    AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
     BrowserModule,
-    BrowserAnimationsModule,
     HttpClientModule, 
     FileUploadModule,
     AppRoutingModule,
     FormsModule,
-    DepartmentModule,
-    ReactiveFormsModule,
     BrowserAnimationsModule,
+    ServicesModule
   ],
 
   providers: [ProfileService, SettingsService],

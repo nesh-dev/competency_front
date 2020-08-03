@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-
+import { AuthGuard } from './services/auth/auth.guard'
+import { RedirectGuardService } from './services/auth/redirect.guard'
 
 const appRoutes: Routes = [
-    {path: '', pathMatch: 'full', redirectTo: '/landing-page'},
-    { path: 'dashboard', pathMatch: 'full', redirectTo: '/dashboard' },
-    {path: '', pathMatch: 'full', redirectTo: '/create-department'}, 
-    { path: "update-profile", component: UpdateProfileComponent },
+    { path : '', redirectTo : '', pathMatch: 'full' , canActivate : [ RedirectGuardService ] },
+    { path: 'dashboard', pathMatch: 'full', redirectTo: '/dashboard', canActivate : [ AuthGuard ]  },
+    { path: "update-profile", component: UpdateProfileComponent, canActivate : [ AuthGuard ] },
     { path: "sidebar", component: SidebarComponent },
 
 ]
