@@ -22,12 +22,16 @@ import { SettingsService } from './services/settings.services';
 import { ServicesModule } from './services/service.module';
 import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
 
+import { AssessmentFormModule }from './self-assessment/assessment-form/assessment-form.module';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     UpdateProfileComponent,
-
     ],
+
   imports: [
     RouterModule,
     RegisterModule,
@@ -49,7 +53,8 @@ import { UpdateProfileComponent } from './dashboard/update-profile/update-profil
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    ServicesModule
+    ServicesModule,
+    AssessmentFormModule,
   ],
 
   providers: [ProfileService, SettingsService],
