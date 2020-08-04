@@ -1,0 +1,25 @@
+
+  <mat-card>
+    
+    <div class="signup-page">
+      <div class="logo">
+        <img src="/assets/img/moringa.png">
+      </div>
+
+        <div class="form">
+          
+            <h1>Login</h1>
+        <br>
+        <br><br>
+            <form [formGroup]="form" (ngSubmit)="login()" class="login-form">
+            <input type="text" placeholder="username" [formControl]="form.controls.username"/>
+            <input type="password" placeholder="Password" [formControl]="form.controls.password"/>
+            <br>
+            <br>
+            <br>
+            <button>Sign In</button>
+            <p class="message">Forgot Your Password? <a href="#">reset</a></p>
+          </form>
+        </div>
+      </div>
+    </mat-card>

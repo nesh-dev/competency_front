@@ -1,0 +1,31 @@
+<div class="container">
+<mat-card>
+    <mat-card-content>
+        <form #createdepartmentForm="ngForm" (ngSubmit)="onSubmit(createdepartmentForm.value)">
+            <div class=imagediv>
+                <img src="./assets/img/moringa-logo.png">
+            </div>
+            <br><br>
+                        
+            <h1>Add Manager</h1>
+            
+            <br>
+
+            <div class="managerinputs">
+                <input required placeholder="Manager Name" #managerName="ngModel"  id="managerName" type="text"  class="form-control" ngModel>
+                <!-- <span *ngIf="managerName.invalid" class="error">Department Name is Required</span> -->
+                <span *ngIf="managerName.valid" class="error">Manager Name is Required</span>        
+                <br><br>
+                <input  placeholder="Username" #managerUsername="ngModel" id="managerUsername" type="text"  class="form-control" ngModel>
+                <br><br>
+                <input  placeholder="Email" #manageEmail="ngModel" id="managerEmail" type="email"  class="form-control" ngModel>
+            </div>
+
+            
+            <br><br><br><br><br><br><br><br><br>
+            <button mat-button  type="submit" class="btn btn-primary">Add</button>
+            <br><br><br>
+        </form>
+    </mat-card-content>
+</mat-card>
+</div>

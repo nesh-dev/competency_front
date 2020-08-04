@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit()">
+    <br>
+
+    <img src="../../../assets/images/github.png" class="rounded-circle avatar center" alt="">
+    <a href="#">Change</a>
+
+    <br> <br>
+
+    <h2>Update Your Profile</h2>
+
+    <input type="text" id="name" placeholder="First Name " size="14 " [(ngModel)]="user.firstname " />
+    <input type="text" id="name" placeholder="Last Name " size="14 " [(ngModel)]="user.lastname " />
+    <br>
+    <input type="text" id="contact" placeholder="Phone Number " size="35 " [(ngModel)]="user.contact " /> <br> <br>
+
+
+    <textarea name="bio " id="bio " rows="8 " cols="37.5 " placeholder="Bio" [(ngModel)]="user.bio "></textarea> <br> <br> <br> <br> <br>
+
+    <button type="submit "> Update </button>
+</form>

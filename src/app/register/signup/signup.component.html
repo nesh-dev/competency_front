@@ -1,0 +1,29 @@
+<div class="loading-spinner" *ngIf="loading">
+    <mat-spinner [diameter]="150"></mat-spinner>
+</div>
+
+  <mat-card>
+    <div class="signup-page" *ngIf="!loading">
+      <div class="logo">
+        <img src="/assets/img/moringa.png">
+      </div>
+     
+        <div class="form" >
+          
+            <h1>Register Your Supervisor Account</h1>
+        <br>
+        <br><br>
+          <form [formGroup]="form"  (ngSubmit)="register()" class="login-form">
+            <input type="text" placeholder="Username"  [formControl]="form.controls.username"/>
+            <input type="email" placeholder="Email address"  [formControl]="form.controls.email"/>
+            <input type="password" placeholder="Choose password"  [formControl]="form.controls.password"/>
+            <input type="password" placeholder="Confirm password"  [formControl]="form.controls.confirm_password"/>
+            <br>
+            <br>
+            <br>
+            <button>Sign Up</button>
+            <p class="message">Already have an Account? <a href="/login">Sign in</a></p>
+          </form>
+        </div>
+      </div>
+    </mat-card>
