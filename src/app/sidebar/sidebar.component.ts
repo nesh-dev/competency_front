@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SettingsService } from '../services/settings.services';
-import { ROUTES } from './sidebar-routes.config';
+// import { SidebarRoutingModule} from './sidebar-routes.config';
+import { ROUTES} from './sidebar-routes.config';
 import { Router } from '@angular/router';
 
 @Component({
@@ -25,6 +26,8 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.menuItems)
+
     this.color = this.settingsService.getSidebarFilter();
     this.settingsService.sidebarFilterUpdate.subscribe((filter: string) => {
       this.color = filter;

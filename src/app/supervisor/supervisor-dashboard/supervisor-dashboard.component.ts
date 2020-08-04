@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SupervisorDashboardComponent implements OnInit {
 
+  opened = true;
+
   constructor() { }
 
   ngOnInit(): void {

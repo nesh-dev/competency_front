@@ -1,3 +1,17 @@
+mat-sidenav-container{
+    height:100%;
+    background-color: white;
+}
+
+mat-sidenav mat-sidenav-content {
+    padding:16px;
+    
+}
+
+mat-sidenav{
+     background-color: white;
+     width: 260px; 
+}
 a{
     float: right;
 }
@@ -100,13 +114,17 @@ h1{
     width: 30%;   
 }
 
-#recommendationrow p{
+/* #recommendationrow p{
     font-size: medium;
     font-weight: 500;  
-}
+} */
 
 #topcardsrow{
-    margin-left:-60px;
+    margin-left:-250px;
+    
+}
+.bottomcardsrow{
+    margin-left:-190px;
     
 }
 .row {margin: 0 -5px;}

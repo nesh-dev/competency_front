@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SupervisorDashboardComponent } from './supervisor-dashboard/supervisor-dashboard.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {SupervisorRoutingModule} from './supervisor.routing.module';
+import { ViewreviewsComponent } from './viewreviews/viewreviews.component';
+import {ReviewsRoutingModule} from './reviews.routing.module';
 import { RouterModule} from '@angular/router';
 import {SharedmoduleModule} from '../sharedmodule/sharedmodule.module';
-
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule} from '@angular/material/card';
@@ -17,13 +14,13 @@ import { MatRadioModule } from  '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 
 
 @NgModule({
-  declarations: [
-    SupervisorDashboardComponent],
+  declarations: [ViewreviewsComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -36,9 +33,18 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatGridListModule,
     MatButtonModule,
     MatSidenavModule,
-    SupervisorRoutingModule,
+    ReviewsRoutingModule,
     RouterModule,
     SharedmoduleModule,
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+    }),
   ]
 })
-export class SupervisorModule { }
+export class ReviewsModule { }

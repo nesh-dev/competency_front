@@ -4,6 +4,9 @@ import { ManagerDashboardComponent } from './manager-dashboard/manager-dashboard
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ManagerRoutingModule} from './manager-dash.routing.module';
 import { RouterModule} from '@angular/router';
+import {SharedmoduleModule} from '../sharedmodule/sharedmodule.module';
+
+
 
 
 import { MatSliderModule } from '@angular/material/slider';
@@ -13,13 +16,15 @@ import { MatInputModule } from  '@angular/material/input';
 import { MatRadioModule } from  '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 
 
 
 @NgModule({
-  declarations: [ManagerDashboardComponent],
+  declarations: [
+    ManagerDashboardComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -33,6 +38,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatButtonModule,
     ManagerRoutingModule,
     RouterModule,
+    SharedmoduleModule,
+    MatSidenavModule,
   ]
 })
 export class ManagerDashboardModule { }
