@@ -1,3 +1,18 @@
+mat-sidenav-container{
+    height:100%;
+    background-color: white;
+}
+
+mat-sidenav mat-sidenav-content {
+    padding:16px;
+    
+}
+
+mat-sidenav{
+     background-color: white;
+     width: 260px; 
+     font-family: Montserrat;
+}
 .mat-card{
     background-color: rgb(238, 244, 253);
     color: black;

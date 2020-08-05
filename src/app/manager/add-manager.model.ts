@@ -1,5 +1,5 @@
 export class Manager {
-    managername: String;
+    managerName: String;
     managerusername: String;
     manageremail: String;
 }

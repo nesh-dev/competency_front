@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateDepartmentFormComponent implements OnInit {
 
+  opened = true;
+
   constructor() { }
 
   onSubmit(data){

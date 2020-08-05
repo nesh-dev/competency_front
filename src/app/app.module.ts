@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FileUploadModule } from 'ng2-file-upload';
 import { RegisterModule } from './register/register.module';
 import { RouterModule} from '@angular/router';
+import {UpdateModule} from './dashboard/update-profile/update/update.module';
 import {DepartmentModule} from './department/department.module';
 import {ManagerModule} from './manager/manager.module';
 import {LandingModule} from './landing/landing.module';
@@ -20,8 +21,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileService } from './services/profile/profile.service';
 import { SettingsService } from './services/settings.services';
 import { ServicesModule } from './services/service.module';
-import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
-
 import { AssessmentFormModule }from './self-assessment/assessment-form/assessment-form.module';
 
 
@@ -29,7 +28,6 @@ import { AssessmentFormModule }from './self-assessment/assessment-form/assessmen
 @NgModule({
   declarations: [
     AppComponent,
-    UpdateProfileComponent,
     ],
 
   imports: [
@@ -45,6 +43,7 @@ import { AssessmentFormModule }from './self-assessment/assessment-form/assessmen
     ReporteeDashModule,
     ReviewsModule,
     RolesModule,
+    UpdateModule,
     ReactiveFormsModule,
     FormsModule,
     BrowserModule,

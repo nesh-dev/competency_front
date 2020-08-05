@@ -17,7 +17,9 @@ export class AuthService {
     roleAs: string;
 
     registerUrl = `${environment.BASE_URL}signup/`;
-    loginUrl = `${environment.BASE_URL}login/`
+    loginUrl = `${environment.BASE_URL}login/`;
+    managerUrl = `${environment.BASE_URL}signup/`;
+    reporteeUrl = `${environment.BASE_URL}signup/`;
     
     private httpOptions;
     private currentUserSubject: BehaviorSubject<UserInfo>;
@@ -80,5 +82,13 @@ export class AuthService {
           return 'supervisor'
         }
        
+      }
+
+      addManager(data: Object): Observable<any> {
+        return this.httpClient.post<any>(`${this.managerUrl}`, {...data}, this.httpOptions)
+      }
+
+      addReportee(data: Object): Observable<any> {
+        return this.httpClient.post<any>(`${this.reporteeUrl}`, {...data}, this.httpOptions)
       }
 }

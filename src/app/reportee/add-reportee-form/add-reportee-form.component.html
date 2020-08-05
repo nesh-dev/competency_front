@@ -1,28 +1,41 @@
-<div class="container">
-    <mat-card>
-        <mat-card-content>
-            <form #addreporteeForm="ngForm" (ngSubmit)="onSubmit(addreporteeForm.value)">
-                <div class="imagediv">
-                    <img src="./assets/img/moringa-logo.png">
-                </div>
-                <br><br>
-                <h1>Add Reportee</h1>
-                <br>
-                
-                <div class="reporteeinputs">               
-                    <input required placeholder="Reportee Name" #reporteeName="ngModel"  id="reporteeName" type="text"  class="form-control" ngModel>
-                    <!-- <span *ngIf="reporteeName.invalid" class="error">Department Name is Required</span> -->
-                    <span *ngIf="reporteeName.valid" class="error">Reportee Name is Required</span>
-                    <br><br>    
-                    <input  placeholder="Username" #reporteeUsername="ngModel" id="reporteeUsername" type="text"  class="form-control" ngModel>
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+        
+    
+    <mat-sidenav-content>
+    <a (click)="sidenav.open()">Open</a>
+    <br>
+    <a (click)="sidenav.close()">Close</a>
+
+    <div class="container">
+        <mat-card>
+            <mat-card-content>
+                <form [formGroup]="form" (ngSubmit)="addReportee()" class="addreportee-form">
+                    <div class="imagediv">
+                        <img src="./assets/img/moringa-logo.png">
+                    </div>
                     <br><br>
-                    <input placeholder="Email" #reporteeEmail="ngModel" id="reporteeEmail" type="email"  class="form-control" ngModel>
-                </div>
-                
-                <br><br><br><br><br><br><br><br><br>
-                <button mat-button  type="submit" class="btn btn-primary">Add</button>
-                
-            </form>
-        </mat-card-content>
-    </mat-card>
-    </div>
+                    <h1>Add Reportee</h1>
+                    <br>
+                    
+                    <div class="reporteeinputs">               
+                        <input required placeholder="Reportee Name" id="reporteeName" type="text"  [formControl]="form.controls.reporteeName">
+                        <!-- <span *ngIf="reporteeName.invalid" class="error">Department Name is Required</span> -->
+                        <!-- <span *ngIf="reporteeName.valid" class="error">Reportee Name is Required</span> -->
+                        <br><br>    
+                        <input  placeholder="Username" id="reporteeUsername" type="text"  [formControl]="form.controls.username">
+                        <br><br>
+                        <input placeholder="Email"  id="reporteeEmail" type="email"  [formControl]="form.controls.email">
+                    </div>
+                    
+                    <br><br><br><br><br><br><br><br><br>
+                    <button mat-button  type="submit" class="btn btn-primary">Add</button>
+                    
+                </form>
+            </mat-card-content>
+        </mat-card>
+        </div>
+        </mat-sidenav-content>

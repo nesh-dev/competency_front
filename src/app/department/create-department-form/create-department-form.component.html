@@ -1,33 +1,47 @@
-<div class="container">
-<mat-card>
-    <mat-card-content>
-        <form #createdepartmentForm="ngForm" (ngSubmit)="onSubmit(createdepartmentForm.value)">
-            <div class="imagediv">
-                <img src="./assets/img/moringa-logo.png">
-            </div>
-            <br><br>
-            <h1>Create Department</h1>
-            
-            <div class="departmentinputs">
-                <br>
-                <input required placeholder="Department Name" #departmentName="ngModel"  id="departmentName" type="text"  class="form-control" ngModel>
-                <!-- <span *ngIf="departmentName.invalid" class="error">Department Name is Required</span> -->
-                <span *ngIf="departmentName.valid" class="error">Department Name is Required</span>
+
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+        
+    
+    <mat-sidenav-content>
+    <a (click)="sidenav.open()">Open</a>
+    <br>
+    <a (click)="sidenav.close()">Close</a>
+
+    <div class="container">
+    <mat-card>
+        <mat-card-content>
+            <form #createdepartmentForm="ngForm" (ngSubmit)="onSubmit(createdepartmentForm.value)">
+                <div class="imagediv">
+                    <img src="./assets/img/moringa-logo.png">
+                </div>
                 <br><br>
-                <input placeholder="Department Code" #departmentCode="ngModel" id="departmentCode" type="text"  class="form-control" ngModel>          
+                <h1>Create Department</h1>
                 
-                <br><br>
-                <select id="assignManager">
-                    <option placeholder="Assign Manager" type=radio class="form-control">Assign Manager
-                    <option   #assignManager="ngModel" id="assignManager" type="radio" class="form-control" value="Rose Kairu" ngModel>Rose Kairu
-                    <option #assignManager="ngModel" id="assignManager" type="radio" class="form-control" value="Collin Owino" ngModel>Collin Owino
-                </select>
-            </div>
+                <div class="departmentinputs">
+                    <br>
+                    <input required placeholder="Department Name" #departmentName="ngModel"  id="departmentName" type="text"  class="form-control" ngModel>
+                    <!-- <span *ngIf="departmentName.invalid" class="error">Department Name is Required</span> -->
+                    <span *ngIf="departmentName.valid" class="error">Department Name is Required</span>
+                    <br><br>
+                    <input placeholder="Department Code" #departmentCode="ngModel" id="departmentCode" type="text"  class="form-control" ngModel>          
+                    
+                    <br><br>
+                    <select id="assignManager">
+                        <option placeholder="Assign Manager" type=radio class="form-control">Assign Manager
+                        <option   #assignManager="ngModel" id="assignManager" type="radio" class="form-control" value="Rose Kairu" ngModel>Rose Kairu
+                        <option #assignManager="ngModel" id="assignManager" type="radio" class="form-control" value="Collin Owino" ngModel>Collin Owino
+                    </select>
+                </div>
+                
+                <br><br><br><br><br><br><br><br><br><br>
+                <button  mat-button  type="submit" class="btn btn-primary">Create</button>
             
-            <br><br><br><br><br><br><br><br><br><br>
-            <button mat-button  type="submit" class="btn btn-primary">Create</button>
-           
-        </form>
-    </mat-card-content>
-</mat-card>
-</div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+    </div>
+    </mat-sidenav-content>

@@ -4,6 +4,8 @@ import { AddManagerFormComponent } from './add-manager-form/add-manager-form.com
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ManagerRoutingModule} from './manager.routing.module';
 import { RouterModule} from '@angular/router';
+import {AuthService} from '../services/auth/auth.service';
+import {ManagereporteeService} from '../services/auth/managereportee.service';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule} from '@angular/material/card';
@@ -11,6 +13,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from  '@angular/material/input';
 import { MatRadioModule } from  '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {SharedmoduleModule} from '../sharedmodule/sharedmodule.module';
 
 
 @NgModule({
@@ -27,6 +31,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatButtonModule,
     ManagerRoutingModule,
     RouterModule,
-  ]
+    SharedmoduleModule,
+    MatSidenavModule,
+  ],
+  providers: [AuthService, ManagereporteeService],
 })
 export class ManagerModule { }

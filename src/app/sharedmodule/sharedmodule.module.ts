@@ -5,8 +5,6 @@ import {SettingsService} from '../services/settings.services';
 import { RouterModule } from '@angular/router';
 
 
-// import { SidebarRoutingModule} from '../sidebar/sidebar-routes.config';
-
 
 
 

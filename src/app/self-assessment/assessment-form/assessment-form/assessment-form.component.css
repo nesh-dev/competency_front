@@ -1,4 +1,22 @@
+
 html,
+
+mat-sidenav-container{
+    height:100%;
+    background-color: white;
+}
+
+mat-sidenav mat-sidenav-content {
+    padding:16px;
+    
+}
+
+mat-sidenav{
+     background-color: white;
+     width: 260px; 
+     font-family: montserrat;
+}
+
 body {
     height: 100%;
     padding: 0;

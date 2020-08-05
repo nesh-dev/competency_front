@@ -17,6 +17,8 @@ import { MatRadioModule } from  '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 
 
@@ -40,6 +42,16 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     RouterModule,
     SharedmoduleModule,
     MatSidenavModule,
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+      
+    }),
   ]
 })
 export class ManagerDashboardModule { }

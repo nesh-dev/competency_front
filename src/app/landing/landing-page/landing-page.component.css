@@ -1,7 +1,56 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+
 body{
     background-color: rgb(99, 124, 51);
-    background-size: 100%
-}
+    background-size: 100%;
+
+    background: linear-gradient( rgb(99, 124, 51), rgb(99, 124, 51),  rgb(99, 124, 51), rgb(99, 124, 51));
+
+    -webkit-animation: Background 25s ease infinite;
+    -moz-animation: Background 25s ease infinite;
+    animation: Background 25s ease infinite;
+    }
+
+    @-webkit-keyframes Background {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+    }
+    
+    @-moz-keyframes Background {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+    }
+    
+    @keyframes Background {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+    }
+    
+
 
 .full-screen {
     position: fixed;
@@ -9,7 +58,7 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgb(99, 124, 51);
+    /* background-color: rgb(99, 124, 51); */
     /* background: url(https://i.imgur.com/wCG2csZ.png); */
     background-size: cover;
     background-position: center;

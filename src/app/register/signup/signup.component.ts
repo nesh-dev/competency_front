@@ -49,7 +49,8 @@ export class SignupComponent implements OnInit {
       email: this.form.get("email").value,
       password: this.form.get("password").value,
       user_name: this.form.get("username").value,
-      confirm_password : this.form.get("confirm_password").value
+      confirm_password : this.form.get("confirm_password").value,
+      is_supervisor: true,
       
       }
       this.loading = true;

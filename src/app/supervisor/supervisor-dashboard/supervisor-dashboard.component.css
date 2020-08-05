@@ -10,6 +10,7 @@ mat-sidenav mat-sidenav-content {
 mat-sidenav {
     background-color: white;
     width: 260px;
+    font-family: montserrat;
 }
 
 a {
