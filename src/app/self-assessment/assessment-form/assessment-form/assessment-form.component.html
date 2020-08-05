@@ -6,11 +6,13 @@
         <mat-sidenav #sidenav mode="side" [(opened)]="opened">
             <app-sidebar></app-sidebar>
         </mat-sidenav>
+
         <mat-sidenav-content>
             <button (click)="sidenav.open()">Open</button>
             <button (click)="sidenav.close()">Close</button>
+            
             <div class="container">
-                <h3 style="text-align: center;"> Assessment Form </h3>
+                <h3 style="text-align: center; font-weight:bold; font-size:larger;"> Assessment Form </h3>
 
                 <form [formGroup]="assessmentFormGroup" (ngSubmit)="submit()">
                     <p style="margin: 8px;" *ngIf="isSelfAssessment && !errorAfterSubmission ">This is a self assessment. Fill in the form and submit</p>
@@ -18,7 +20,7 @@
                     <mat-horizontal-stepper linear="false" labelPosition="end">
 
                         <mat-step formGroupName="organisation" [stepControl]="assessmentFormGroup.get('organisation') ">
-                            <ng-template matStepLabel> <span class="mat-wrap-label">  Organisation </span> </ng-template>
+                            <ng-template matStepLabel> <span class="mat-wrap-label" style="font-size:10pt; font-weight:bold; margin-left:-20px;">  Organisation </span> </ng-template>
                             <app-organizationform [assessmentForm]="assessmentFormGroup"></app-organizationform>
                             <div class="stepper-actions">
                                 <button mat-raised-button matStepperNext type="button" style="background-color: rgba(99, 124, 51);">Next</button>
@@ -27,7 +29,7 @@
 
                         <mat-step formGroupName="innovation" [stepControl]="assessmentFormGroup.get('innovation')">
                             <ng-template matStepLabel>
-                                <span class="mat-wrap-label">Innovation</span>
+                                <span class="mat-wrap-label" style="font-size:10pt; font-weight:bold; margin-left:-20px;">Innovation</span>
                             </ng-template>
                             <app-innovationform [assessmentForm]="assessmentFormGroup"></app-innovationform>
                             <div class="stepper-actions">
@@ -38,7 +40,7 @@
 
                         <mat-step formGroupName="interpersonalCommunication" [stepControl]="assessmentFormGroup.get('interpersonalCommunication')">
                             <ng-template matStepLabel>
-                                <span class="mat-wrap-label">Interpersonal Communication</span>
+                                <span class="mat-wrap-label" style="font-size:10pt; font-weight:bold; margin-left:-10px;">Interpersonal Communication</span>
                             </ng-template>
                             <app-interpersonal-communication-form [assessmentForm]="assessmentFormGroup"></app-interpersonal-communication-form>
                             <div class="stepper-actions">
@@ -49,7 +51,7 @@
 
                         <mat-step formGroupName="criticalThinking" [stepControl]="assessmentFormGroup.get('criticalThinking')">
                             <ng-template matStepLabel>
-                                <span class="mat-wrap-label">Critical Thinking</span>
+                                <span class="mat-wrap-label" style="font-size:10pt; font-weight:bold; margin-left:-10px;">Critical Thinking</span>
                             </ng-template>
                             <app-critical-thinking-form [assessmentForm]="assessmentFormGroup"></app-critical-thinking-form>
                             <div class="stepper-actions">
@@ -60,7 +62,7 @@
 
                         <mat-step formGroupName="buildingAndManagingRelationships" [stepControl]="assessmentFormGroup.get('buildingAndManagingRelationships')">
                             <ng-template matStepLabel>
-                                <span class="mat-wrap-label">Building and Managing Relationships</span>
+                                <span class="mat-wrap-label" style="font-size:10pt; font-weight:bold; margin-left:-15px;">Building and Managing Relationships</span>
                             </ng-template>
                             <app-building-and-managing-relationships-form [assessmentForm]="assessmentFormGroup"></app-building-and-managing-relationships-form>
                             <div class="stepper-actions">

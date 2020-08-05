@@ -22,7 +22,7 @@ export class RedirectGuardService implements CanActivate {
   switchDasbboard(role){
     switch(role) {
       case 'reportee':
-        return this.router.navigate(['/create-department']);
+        return this.router.navigate(['/reportee-dash']);
         break;
       case 'manager':
         return this.router.navigate(['/manager-dash']);

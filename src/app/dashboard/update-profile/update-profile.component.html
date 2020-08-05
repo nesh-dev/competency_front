@@ -1,20 +1,38 @@
-<form (ngSubmit)="onSubmit()">
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+        
+    
+    <mat-sidenav-content>
+    <a (click)="sidenav.open()">Open</a>
     <br>
+    <a (click)="sidenav.close()">Close</a>
 
-    <img src="../../../assets/images/github.png" class="rounded-circle avatar center" alt="">
-    <a href="#">Change</a>
+    <form (ngSubmit)="onSubmit()">
+        <div>
+            <img  style="width: 380px; height:180px;" src="./assets/img/moringa-logo.png">
+        </div>
 
-    <br> <br>
+        <img class="avatar" style="margin-left:140px;" src="../../../assets/images/github.png" class="rounded-circle avatar center" alt="">
+        <a href="#">Change</a>
 
-    <h2>Update Your Profile</h2>
+        <br><br>
 
-    <input type="text" id="name" placeholder="First Name " size="14 " [(ngModel)]="user.firstname " />
-    <input type="text" id="name" placeholder="Last Name " size="14 " [(ngModel)]="user.lastname " />
-    <br>
-    <input type="text" id="contact" placeholder="Phone Number " size="35 " [(ngModel)]="user.contact " /> <br> <br>
+        <h2 style="font-size: 20pt; margin-left:60px; font-family: Montserrat;">Update Your Profile</h2>
+
+        <div class="container" style="margin-left:50px;">
+        <input type="text" id="name" placeholder="First Name " size="14 "  />
+        <input type="text" id="name" placeholder="Last Name " size="14 " />
+        <input style="width:240px;" type="text" id="contact" placeholder="Phone Number " size="35 "   /> 
 
 
-    <textarea name="bio " id="bio " rows="8 " cols="37.5 " placeholder="Bio" [(ngModel)]="user.bio "></textarea> <br> <br> <br> <br> <br>
-
-    <button type="submit "> Update </button>
-</form>
+        <textarea style="width:260px;" name="bio " id="bio " rows="8 " cols="37.5 " placeholder="Bio" ></textarea> <br> <br><br>
+        </div>
+      
+        <button type="submit " style="font-size:x-large;"> Update </button>
+        <br><br><br><br>
+    </form>
+    </mat-sidenav-content>
+</mat-sidenav-container>

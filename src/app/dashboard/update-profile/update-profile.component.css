@@ -1,4 +1,22 @@
-    img {
+mat-sidenav-container{
+    height:100%;
+    background-color: white;
+}
+
+mat-sidenav mat-sidenav-content {
+    padding:16px;
+    
+}
+
+mat-sidenav{
+     background-color: white;
+     width: 260px; 
+     font-family: montserrat;
+}
+
+
+
+.avatar {
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -7,14 +25,23 @@
     }
     
     form {
-        background-color: rgb(243, 245, 247);
+        background-color:rgb(238, 244, 253);
         flex-direction: column;
-        width: 350px;
-        height: 620px;
+        width: 380px;
+        height: 720px;
         border-radius: 5px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 28px;
+        
+        
+            /* background-color: rgb(238, 244, 253);
+            color: black;
+            display: flex;
+            justify-content: center;
+            width: 350px;
+            height: 720px;
+         */
     }
     
     h2 {
@@ -53,16 +80,17 @@
     }
     
     button {
-        margin-left: 100px;
-        border-radius: 10px;
+        margin-left: 120px;
         width: 150px;
         background-color: #637c33;
         color: white;
-        padding: 5px;
+        /* padding: 5px; */
         font-size: xx-large;
         border: none;
+        font-size: x-large;
         flex-direction: center;
         font-family: Montserrat;
+        border-radius: 25px;
     }
     
     button:hover {
