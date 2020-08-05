@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
           this.Router.navigate([''])
         },
         (error) => {
-          console.log(error, "tomato")
+    
           this.loading = false; 
           this.SnackBarService.showErrorSnackBar(error.error.non_field_errors[0])
         }

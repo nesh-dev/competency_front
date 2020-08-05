@@ -3,7 +3,7 @@
     <!-- MORINGA SCHOOL -->
 </div>
 <div class="divider" [style.background-color]="dividerBgColor"></div>
-<div class="sidebar-wrapper">
+<div class="sidebar-wrapper" style="margin-bottom: -20px;">
     <div class="nav-container">
         <ul class="nav" style="list-style: none;">
             <li *ngFor="let menuItem of filteredRoutes" routerLinkActive #rla="routerLinkActive" [ngClass]="
@@ -39,4 +39,5 @@
             </li>
         </ul>
     </div>
+
 </div>

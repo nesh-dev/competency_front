@@ -70,7 +70,6 @@ export class AddManagerFormComponent implements OnInit {
         },
 
         (error) => {
-          console.log(error,"potato")
           this.loading = false; 
           this.checkForFieldErrors(error, formData)
           

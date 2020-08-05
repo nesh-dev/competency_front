@@ -1,0 +1,37 @@
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<nav>
+  
+<div id="container">
+  <div class="search">
+    <input type="text" placeholder="Search" name="search" class="searchbar">
+    <button type="submit" class="search_button"><i class="fa fa-search"></i></button>
+  </div>
+  <h1>{{username}}</h1>
+  <h2>{{role}}</h2>
+  <div class="dropdown-container">
+   
+    <label for="openDropdown" class="dropdown">
+      <img src="/assets/img/baseline_account_circle_black_18dp.png" alt="">
+    
+      <i class="fas fa-angle-down"></i>
+      
+    </label>
+    
+    <input type="checkbox" id="openDropdown" hidden>
+  
+    <div class="dropdown-menu">
+      <span [routerLink]="['/update-profile']">Update Profile</span>
+      <span (click)="onLogout()">Logout</span>
+      
+  
+    </div>
+    
+  </div>
+  
+</div>
+<hr style="width:100%;text-align:left;margin-left:0">
+
+
+</nav>
