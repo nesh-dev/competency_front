@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ReporteeDashboardComponent implements OnInit {
 
   opened = true;
-
   constructor() { }
 
   ngOnInit(): void {

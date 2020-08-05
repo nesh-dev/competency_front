@@ -45,7 +45,6 @@ export class SidebarComponent implements OnInit {
   }
   ngOnInit() {
     this.role = [this.AuthService.getRole()]
-    console.log(this.role, "carrot")
     this.filteredRoutes = this.filterRoles(this.role, this.menuItems )
     this.color = this.settingsService.getSidebarFilter();
     this.settingsService.sidebarFilterUpdate.subscribe((filter: string) => {

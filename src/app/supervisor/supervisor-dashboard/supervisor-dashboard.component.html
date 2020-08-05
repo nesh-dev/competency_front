@@ -2,13 +2,17 @@
     <link rel="stylesheet" href="./supervisor-dashboard.component.css">
 </head>
 <body> 
+    <app-navbar></app-navbar>
     <mat-sidenav-container>
+        
         <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+            
             <app-sidebar></app-sidebar>
         </mat-sidenav>
         <mat-sidenav-content>
-            <button (click)="sidenav.open()">Open</button>
-            <button (click)="sidenav.close()">Close</button>
+            <a (click)="sidenav.open()">Open</a>
+            <br>
+            <a (click)="sidenav.close()">Close</a>
 
             <br><br><br>
             <div class="row" id="topcardsrow">

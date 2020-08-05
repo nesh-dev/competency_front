@@ -19,7 +19,6 @@ export class AuthInterceptor implements HttpInterceptor {
         let headers;
         if(token){
           headers = new HttpHeaders().set('Authorization', `Bearer ${token}`)
-          console.log(headers, "tomato") 
         }
         const AuthRequest = request.clone( { headers: headers});
         return next.handle(AuthRequest);

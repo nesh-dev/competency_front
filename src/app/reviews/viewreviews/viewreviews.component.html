@@ -1,4 +1,5 @@
 <body>
+    <app-navbar></app-navbar>
         <mat-sidenav-container>
             <mat-sidenav #sidenav mode="side" [(opened)]="opened">
                 <app-sidebar></app-sidebar>
@@ -6,8 +7,9 @@
             
             <mat-sidenav-content style="background-color:white;">
             <br>
-                <button (click)="sidenav.open()">Open</button>
-                <button (click)="sidenav.close()">Close</button>
+                <a (click)="sidenav.open()">Open</a>
+                <br>
+                <a (click)="sidenav.close()">Close</a>
 
                 <div class="container" style="background-color:rgb(236, 235, 235); margin-left:-200px">
                 <div class="container" style="font-family:Montserrat; margin-left:300px;">

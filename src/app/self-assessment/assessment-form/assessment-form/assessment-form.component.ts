@@ -36,7 +36,6 @@ export class AssessmentFormComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.assessmentFormGroup.value);
     this.errorAfterSubmission = this.assessmentFormGroup.invalid
     this.prepareAssessment()
 
@@ -210,7 +209,7 @@ export class AssessmentFormComponent implements OnInit {
         }
       ]
     };
-    console.log(this.assessment)
+    
   }
 }
   

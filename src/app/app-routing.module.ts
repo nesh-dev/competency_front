@@ -4,13 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { UpdateProfileComponent } from './dashboard/update-profile/update-profile.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AuthGuard } from './services/auth/auth.guard'
-import { RedirectGuardService } from './services/auth/redirect.guard'
+import { RedirectGuardService } from './services/auth/redirect.guard';
+import { NavbarComponent} from './navbar/navbar.component';
 
 const appRoutes: Routes = [
     { path : '', redirectTo : '', pathMatch: 'full' , canActivate : [ RedirectGuardService ] },
     { path: 'dashboard', pathMatch: 'full', redirectTo: '/dashboard', canActivate : [ AuthGuard ]  },
     { path: "update-profile", component: UpdateProfileComponent, canActivate : [ AuthGuard ] },
     { path: "sidebar", component: SidebarComponent },
+    { path: "navbar", component: NavbarComponent }, 
 
 ]
 
