@@ -1,5 +1,5 @@
 export class Department {
-    departmentname: String;
-    departmentcode: String;
-    assignmanager: String;
+    departmentname: 'String';
+    departmentcode: 'String';
+    assignmanager: 'String';
 }

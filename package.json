@@ -22,10 +22,13 @@
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
     "@material-git/radio": "^2.0.0-git.20160919",
+    "@ngx-progressbar/core": "^3.0.2",
+    "@ngx-progressbar/http-client": "^3.0.2",
     "bootstrap": "^4.5.0",
     "jwt-decode": "^2.2.0",
     "ng2-file-upload": "^1.4.0",
     "rxjs": "~6.5.5",
+    "rxjs-compat": "^6.6.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

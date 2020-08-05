@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormControl,FormGroup,Validators } from "@angular/forms";
 import { AuthService } from '../../services/auth/auth.service';
-import { SnackBarService } from '../../services/snackBar/snackbar.service'; 
+import { SnackBarService } from '../../services/snackBar/snackbar.service';
 import { Router } from '@angular/router';
 
 
@@ -12,13 +12,13 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  form: FormGroup; 
-  loading: boolean = false
+  form: FormGroup;
+  loading: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
     private AuthService: AuthService,
-    private SnackBarService: SnackBarService, 
+    private SnackBarService: SnackBarService,
     private Router: Router
   ) { }
 
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       const formData = {
       user_name: this.form.get("username").value,
       password: this.form.get("password").value,
-      
+
       }
       this.loading = true;
       this.AuthService.loginUser(formData).subscribe(
@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
           this.Router.navigate([''])
         },
         (error) => {
-          this.loading = false; 
+          this.loading = false;
           this.SnackBarService.showErrorSnackBar(error.error.non_field_errors[0])
         }
       );

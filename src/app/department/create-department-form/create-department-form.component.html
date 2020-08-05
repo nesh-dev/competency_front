@@ -1,33 +1,33 @@
 <div class="container">
 <mat-card>
     <mat-card-content>
-        <form #createdepartmentForm="ngForm" (ngSubmit)="onSubmit(createdepartmentForm.value)">
+        <form [formGroup]="form" (ngSubmit)="createdepartment()" class="createdepartment-form">
             <div class="imagediv">
                 <img src="./assets/img/moringa-logo.png">
             </div>
             <br><br>
             <h1>Create Department</h1>
-            
-            <div class="departmentinputs">
+
+            <div class="form">
                 <br>
-                <input required placeholder="Department Name" #departmentName="ngModel"  id="departmentName" type="text"  class="form-control" ngModel>
-                <!-- <span *ngIf="departmentName.invalid" class="error">Department Name is Required</span> -->
-                <span *ngIf="departmentName.valid" class="error">Department Name is Required</span>
-                <br><br>
-                <input placeholder="Department Code" #departmentCode="ngModel" id="departmentCode" type="text"  class="form-control" ngModel>          
-                
-                <br><br>
+                <input type="text" placeholder="departmentname" [formControl]="form.controls.departmentname"/>
+                <input type="text" placeholder="departmentcode" [formControl]="form.controls.departmentode"/>
+
+                 <br><br>
                 <select id="assignManager">
-                    <option placeholder="Assign Manager" type=radio class="form-control">Assign Manager
-                    <option   #assignManager="ngModel" id="assignManager" type="radio" class="form-control" value="Rose Kairu" ngModel>Rose Kairu
-                    <option #assignManager="ngModel" id="assignManager" type="radio" class="form-control" value="Collin Owino" ngModel>Collin Owino
+                    <option placeholder="Assign Manager" type='radio' [formControl]="form.controls.assignManager">Assign Manager
+                    <option   type="radio" [formControl]="form.controls.assignManager" >Rose Kairu
+                    <option  type="radio" [formControl]="form.controls.assignManager">Collin Owino
                 </select>
+
             </div>
-            
             <br><br><br><br><br><br><br><br><br><br>
-            <button mat-button  type="submit" class="btn btn-primary">Create</button>
-           
+            <button mat-button  onSubmit="createdepartment()" class="btn btn-primary">Create</button>
+
         </form>
     </mat-card-content>
 </mat-card>
 </div>
+
+
+

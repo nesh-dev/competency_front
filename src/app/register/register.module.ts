@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SignupComponent } from './signup/signup.component';
-import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
@@ -23,15 +23,15 @@ import { RouterModule } from '@angular/router';
     MatFormFieldModule,
     MatButtonModule,
     RouterModule,
-    RegisterRoutingModule, 
-    MatProgressSpinnerModule, 
+    RegisterRoutingModule,
+    MatProgressSpinnerModule ,
     FormsModule
 
   ],
   providers: [
-    SnackBarService, 
+    SnackBarService,
     AuthService
-  ], 
+  ],
   exports: [SignupComponent, LoginComponent]
 })
 export class RegisterModule { }
